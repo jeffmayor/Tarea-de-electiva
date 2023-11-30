@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Comentarios - Jefferson Fuenmayor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .comments-container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .comment {
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .comment-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .comment-author {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .comment-date {
+            color: #777;
+        }
+
+        .comment-text {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .comment-form {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .comment-form label,
+        .comment-form textarea,
+        .comment-form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .comment-form textarea {
+            resize: vertical;
+            padding: 10px;
+        }
+
+        .comment-form button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .comment-form button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="comments-container">
+        <div class="comment">
+            <div class="comment-info">
+                <span class="comment-author">Jeff05:</span>
+                <span class="comment-date">30 de noviembre de 2023</span>
+            </div>
+            <p class="comment-text">Me gusta esta pagina</p>
+        </div>
+
+        <div class="comment">
+            <div class="comment-info">
+                <span class="comment-author">Anth0:</span>
+                <span class="comment-date">29 de noviembre de 2023</span>
+            </div>
+            <p class="comment-text">UWU</p>
+        </div>
+		
+		<div class="comment">
+            <div class="comment-info">
+                <span class="comment-author">Lilian_f:</span>
+                <span class="comment-date">29 de noviembre de 2023</span>
+            </div>
+            <p class="comment-text">Alguien para chat??</p>
+        </div>
+		
+		<div class="comment">
+            <div class="comment-info">
+                <span class="comment-author">Aethel:</span>
+                <span class="comment-date">23 de noviembre de 2023</span>
+            </div>
+            <p class="comment-text">:V</p>
+        </div>
+		
+		<div class="comment">
+            <div class="comment-info">
+                <span class="comment-author">Yuls07:</span>
+                <span class="comment-date">17 de noviembre de 2023</span>
+            </div>
+            <p class="comment-text">Holaa</p>
+        </div>
+
+
+    </div>
+
+    <div class="comment-form">
+        <h2>Deja un comentario</h2>
+        <form action="#" method="post">
+            <label for="author">Nombre:</label>
+            <input type="text" id="author" name="author" required>
+
+            <label for="comment">Comentario:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+
+            <button type="submit">Publicar comentario</button>
+        </form>
+    </div>
+
+</body>
+</html>
